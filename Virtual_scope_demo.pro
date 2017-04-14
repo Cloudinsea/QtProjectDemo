@@ -6,6 +6,7 @@
 
 QT       += core gui
 QT       += serialport
+QT       += printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,8 +26,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        virtual_scope_demo.cpp
+        virtual_scope_demo.cpp \
+    qcustomplot.cpp
 
-HEADERS  += virtual_scope_demo.h
+HEADERS  += virtual_scope_demo.h \
+    qcustomplot.h
 
 FORMS    += virtual_scope_demo.ui
